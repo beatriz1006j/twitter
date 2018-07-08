@@ -1,10 +1,10 @@
  function limite_total(valor) {
     var inicial = 140;
     var total = valor.length;
-    if(total <= inicial) {
-        var resto = inicial - total;
+    /*if(total <= inicial) {*/
+      var  resto = inicial - total ;
         document.getElementById('contador').innerHTML = resto;
-    } 
+    /*}*/
 	if (resto >=31) {
     document.querySelector("#contador").style.color = "black";
   }
@@ -14,6 +14,7 @@
 	if (resto <= 10) {
     document.querySelector("#contador").style.color = "yellow";
   }
+     
 	
 	
     
