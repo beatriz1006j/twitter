@@ -1,0 +1,76 @@
+body{
+padding: 0;
+margin: 0 auto;
+font-size: 16px;
+background-image:url(../assets/img/twitter-wallpaper.png); 
+display: flex;
+justify-content: center;
+
+
+}
+
+#faixa{
+margin-top: 10px;
+width: 940px;
+height:45px;	
+background: linear-gradient(#fff,#4bb8ee);
+border-radius: 20px;
+}
+
+.img{
+margin-top:-300px;
+margin-left:400px;
+margin-bottom:70px;
+}
+
+.header{
+background-color: #F1F1F1;
+width: 840px;
+height:170px;
+float: right;
+padding: 50px;
+color: #352384;
+margin-top: 50px;
+border-radius: 5px;
+
+}
+
+textarea{
+margin-top: -30px;
+border-bottom:1px solid #d1d1d1;
+width: 800px;
+height: 160px;
+font-size: 20px;
+border-radius: 10px;
+
+}
+
+#button{
+background-color:#4ab3f4;
+border-radius: 20px;
+border:none; 
+font-size:12px;
+color:#FFF;
+height: 25px;
+width: 70px;
+float: right;
+margin-right:40px;
+}
+
+#button:disabled{
+    color: dimgrey;
+}
+
+#saida{
+margin: 40px;
+margin-left:-50px; 
+height: 200px;
+width: 935px;
+background-color: #fff;
+border: 3px solid  #1d1d1d;
+border-radius:4px;
+
+}
+
+
+
