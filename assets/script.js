@@ -16,16 +16,20 @@
 	if (resto <= 10) {
     document.querySelector("#contador").style.color = "yellow";
   }
-        
+     if(resto < 0){
+     button.setAttribute("disabled", "true");
+  }
+    
 }
 
 function enviar(){
   var saida = document.getElementById("msg").value;
   document.getElementById('saida').innerHTML += "<p>" + saida + "</p>";
   document.getElementById("msg").value = "";
+    
+    
 
 }
-
 
 function hora(){
     data = new Date
@@ -38,9 +42,14 @@ function desabilite_Botao(){
     
       if(document.getElementById("msg").value == ""){
        document.querySelector("#button").disabled = true;
+          
    }else{
        document.querySelector("#button").disabled = false;
    }
   
 
 }
+
+ 
+
+
