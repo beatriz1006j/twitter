@@ -22,21 +22,33 @@
     
 }
 
-function enviar(){
-  var saida = document.getElementById("msg").value;
-  document.getElementById('saida').innerHTML += "<p>" + saida + "</p>";
-  document.getElementById("msg").value = "";
+    var container = document.getElementById("saida");
     
+
+    function enviar(){
+    var saida = document.getElementById("msg").value;
+    document.getElementById("msg").value = "";
+    var p = document.createElement("p");
+    p.textContent = saida;
+    container.prepend(p);
+
+    moment.locale("pt-br");  
+    let hora = document.createElement("small");      
+    hora.textContent = "--" + moment().format('LLL');
+    p.appendChild(hora);
     
 
 }
 
-function hora(){
+/*function hora(){
     data = new Date
     var hour = document.createElement('p');
     document.write ( + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds()  )
+    
+    document.querySelector('#hora').innerHTML = hora();
+   
 }
-
+*/
 
 function desabilite_Botao(){
     
