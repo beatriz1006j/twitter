@@ -60,7 +60,8 @@ margin-right:40px;
 }
 
 #button:disabled{
-    color: dimgrey;
+    color: red;
+    background-color: dimgrey;
 }
 
 #saida{
