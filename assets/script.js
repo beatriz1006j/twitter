@@ -19,6 +19,9 @@
      if(resto < 0){
      button.setAttribute("disabled", "true");
   }
+       if(document.getElementById("msg").value == ""){
+     button.setAttribute("disabled", "true");
+  }
     
 }
 
