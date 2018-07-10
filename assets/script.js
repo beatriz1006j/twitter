@@ -5,41 +5,42 @@
       var  resto = inicial - total ;
         document.getElementById('contador').innerHTML = resto;
     /*}*/
-	if (resto >=31) {
+     
+     
+	if (resto >=21) {
     document.querySelector("#contador").style.color = "black";
   }
-	if (resto <= 30) {
+	if (resto <= 20) {
     document.querySelector("#contador").style.color = "red";
   }
 	if (resto <= 10) {
     document.querySelector("#contador").style.color = "yellow";
   }
-     
-	
-	
-    
+        
 }
 
 function enviar(){
   var saida = document.getElementById("msg").value;
   document.getElementById('saida').innerHTML += "<p>" + saida + "</p>";
   document.getElementById("msg").value = "";
-    
-    
-    
-    if(saida ===""){
-        alert("É necessariio digitar uma mensagem");
-        
-    }
-  
 
 }
 
-function desabit_Botao(){
+
+function hora(){
+    data = new Date
+    var hour = document.createElement('p');
+    document.write ( + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds()  )
+}
+
+
+function desabilite_Botao(){
     
-    if(valor.length === ""){
-     document.getElementById('button').disabled = true;
-} 
+      if(document.getElementById("msg").value == ""){
+       document.querySelector("#button").disabled = true;
+   }else{
+       document.querySelector("#button").disabled = false;
+   }
   
 
 }
